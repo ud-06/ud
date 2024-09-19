@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int hr,min;
+    cin>>hr>>min;
+    int hd=hr*30;
+    int md=min*6;//1 hr=60 min
+    //so 60min=30 degree
+    float dev=min*0.5;
+    float tot=hd+dev;
+    float diff= tot-md;
+    cout>>abs(diff);
+}
+ 
